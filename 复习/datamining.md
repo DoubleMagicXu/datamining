@@ -66,9 +66,9 @@ then one can smooth by bin means, smooth by bin median, smooth by bin boundaries
     1.  correlation analysis
     2.  covariance analysis
 
- ![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/Rab.png)
+ ![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/Rab.png)
 
- ![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/cov.png)
+ ![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/cov.png)
 
 ### Data Reduction
 
@@ -172,15 +172,15 @@ confidence(A => B )=P(B|A)
 
  若任一项集是不频繁的,则其超集不应该被生成/测试!
 
- ![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/apriori.png)
+ ![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/apriori.png)
 
 ### FP Growth算法
 
     1. 扫描事务数据库D一次,得到频繁项的集合F及它们的支持度.将F按支持度降序排列成L,L是频繁项的列表.
     2. 创建FP-树的根, 标注其为NULL.对D中的每个事务进行以下操作:根据 L中的次序对事务中的频繁项进行选择和排序. 设事务中的已排序的频繁项列表为[p|P],其中p表示第一个元素,P表示剩余的列表.调用insert_Tree([p|P],T).
 
-![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/fr.png)
-![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/fr2.png)
+![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/fr.png)
+![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/fr2.png)
 
 ## Data Classification
 
@@ -199,7 +199,7 @@ confidence(A => B )=P(B|A)
 
 #### 决策树算法ID3
 
-![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/ID3.png)
+![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/ID3.png)
 
 
 
@@ -287,7 +287,7 @@ Lazy: less time in training but more time in predicting
 
 ## Genetic Algorithms 
 
-![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/ga.png)
+![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/ga.png)
 
 ## 粗糙集
 
@@ -391,9 +391,9 @@ $$r_R(F)=\frac{\sum_{i=1}^ncard(R_-(X_i))}{card(U)}$$
 
 **知识的相对简化**
 
-![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/zs01.png)
+![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/zs01.png)
 
-![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/zs02.png)
+![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/zs02.png)
 
 **知识依赖性度量**
 
@@ -411,7 +411,7 @@ $$k=r_P(Q)=\frac{card(POS_P(Q))}{card(U)}$$
 
 **可辨识矩阵**
 
-![](https://raw.githubusercontent.com/DoubleMagicXu/dataming/master/%E5%A4%8D%E4%B9%A0/kb.png)
+![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/kb.png)
 
 ## Clustering Algorithm (聚类算法)
 
