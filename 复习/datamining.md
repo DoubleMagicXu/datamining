@@ -1,25 +1,28 @@
-# Data Mining 知识点
-***
-## 背景(为什么要Data Mining)
+# Data Mining 学习笔记
+## 背景
 我们处在信息时代，这个时代不缺乏数据,数据库中的数据量急速膨胀，但是缺乏有价值的信息(当然也缺乏获取有用信息的人)。
 
 于是产生了KDD(knowledge discovery in dadabase),Data Mining 是KDD的一个步骤。
-## Data Minng 概念
+## Data Mining 概念
 从*大量的,不完全的，有噪声的，模糊的，随机的*数据中,提取*隐含在其中的，人们事先不知道的，但又是潜在信息和知识*的过程。
 
 知识发现(KDD)是“数据挖掘”的广义说法；数据挖掘是知识发现过程的核心。
 ## Similarity and Dissimilarity
 相似度一般取值[0,1],而不相似度最小取0(eg:Distace)
 ### Minkowski Distance(明式距离)
-公式略，自己查；又被成为L-h norm
+$$\sqrt[h]{\sum|x_i-y_i|^h}$$
+又被成为L-h norm
 
 **特殊情况**
 
     1. 哈弗曼距离(L-1 norm)
-    2. 欧氏距离(l-2 norm)
+    2. 欧氏距离(L-2 norm)
     3. supuremum距离，或者称为棋盘距离
 
 ### Cosin Similarity(余弦相似度)
+$$\cos(\theta)=\frac{a\cdot b}{||a||\times||b||}$$
+
+
 
 ## 数据预处理
 ### Data Preprocessing 主要步骤
@@ -38,8 +41,8 @@
 
 **Binning （分级）**
 
-*first sort data and partition into (equal-frequency) bins
-then one can smooth by bin means, smooth by bin median, smooth by bin boundaries, etc.*
+*first sort data and partition into (equal-frequency) bins*
+*then one can smooth by bin means, smooth by bin median, smooth by bin boundaries, etc.*
 
 **Regression**
 
@@ -67,8 +70,15 @@ then one can smooth by bin means, smooth by bin median, smooth by bin boundaries
     2.  covariance analysis
 
  ![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/Rab.png)
+$${\sigma} _A \sigma_B$$是标准差
 
- ![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/cov.png)
+ $$r_{A,B}>0$$ ,正相关
+
+ $$r_{A,B}=0$$ : 独立
+
+$$r_{A,B}<0$$ : 负相关
+
+$$Cov(A,B)=E(A\cdot B)-\bar A\bar B $$ ![](https://raw.githubusercontent.com/DoubleMagicXu/datamining/master/%E5%A4%8D%E4%B9%A0/cov.png)
 
 ### Data Reduction
 
@@ -317,15 +327,15 @@ X的上近似集是知识R的在U中一定和可能归入集合X的对象的集�
 
 **正域**
 
-POSR(X) = R_(X)
+$$POSR(X) = R_-(X)$$
 
 **负域**
 
-NEGR(X) = U-R-(X)
+$$NEGR(X) = UR^-(X)$$
 
 **边界**
 
-BNR(X) = R-(X)-R_(X)
+$$BNR(X) = R^-(X)-R_-(X)$$
 
 **由等价关系R描述的对象集X的近似精度为：**
 $$d_R(X)=\frac{card(R_-(X))}{card(R^{-}(X))}$$
